@@ -1,7 +1,6 @@
 # Ukab (UNO)
-=======
 Sample php_backdoor generator/connector , 
 * Python3 urllib-based 100% 
-* without session
+* without sessions
 
 > to be developed
