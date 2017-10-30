@@ -38,7 +38,7 @@ if (hash('sha256', $_GET['pass']) == $SHAPass)
   echo base64_decode('RTMzb3I=');
 
 }
-elseif (md5($_GET['pass']) != $Md5Pass)
+elseif (md5($_GET['pass']) != $SHAPass)
 {
   echo 'Wrong Password ,';
 }
