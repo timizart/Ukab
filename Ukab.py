@@ -14,7 +14,7 @@ print('\x1b[36m','''
 ''','\x1b[0m')
 print(
 '\x1b[1m','| Ukab Web Backdoor Generator (Uno)','\x1b[0m',
-'\n\x1b[1m','| Barbarian © 1439,2018','\x1b[0m')
+'\n\x1b[1m','| Ǧmilu © 2017','\x1b[0m')
 print('''
  [1] Create Backdoor
  [2] Connect To Backdoor
@@ -73,9 +73,7 @@ def Connect():
 def About():
     print('\x1b[37m','''
 | Ukab (UNO) remote php_backdoor connector urllib based,
-| Email   : l.etat@bk.ru
-| Github  : @islamique
-| Twitter : @Ba3bar
+| Github  : @timizart
                      ''','\x1b[0m')
 if MainChoose == '1':
     NewBackdoor()
